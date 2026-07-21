@@ -7,6 +7,19 @@
     <title>David Sun | 倉儲進銷存管理專業輔助</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontSize: {
+                        'xs': ['0.875rem', { lineHeight: '1.25rem' }],
+                        'sm': ['1rem', { lineHeight: '1.5rem' }],
+                        'base': ['1.125rem', { lineHeight: '1.75rem' }],
+                    }
+                }
+            }
+        }
+    </script>
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <!-- Alpine.js for interactive state -->
@@ -42,18 +55,24 @@
             </div>
 
             <!-- Mobile Menu Button -->
-            <button @click="open = !open" class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none" aria-label="切換選單">
+            <button @click="open = !open"
+                class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none"
+                aria-label="切換選單">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" x-show="!open">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
                 </svg>
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" x-show="open" style="display: none;">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" x-show="open"
+                    style="display: none;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
                 </svg>
             </button>
         </div>
 
         <!-- Mobile Dropdown Menu -->
-        <div x-show="open" style="display: none;" class="md:hidden border-t border-slate-800 bg-slate-900/95 px-6 py-4 space-y-3 text-sm font-medium text-slate-300">
+        <div x-show="open" style="display: none;"
+            class="md:hidden border-t border-slate-800 bg-slate-900/95 px-6 py-4 space-y-3 text-sm font-medium text-slate-300">
             <a href="#about" @click="open = false" class="block hover:text-indigo-400 py-1 transition">關於我</a>
             <a href="#expectations" @click="open = false" class="block hover:text-indigo-400 py-1 transition">期望工作內容</a>
             <a href="#translator" @click="open = false" class="block hover:text-indigo-400 py-1 transition">雙向轉譯</a>
@@ -64,11 +83,7 @@
 
     <!-- Hero Section -->
     <section id="about" class="max-w-6xl mx-auto px-6 py-16">
-        <div
-            class="inline-flex items-center space-x-2 bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs px-3 py-1.5 rounded-full mb-6">
-            <i data-lucide="sparkles" class="w-4 h-4"></i>
-            <span>20 年落地經驗 · 實務彈性與集團化架構兼具</span>
-        </div>
+
         <!-- PATH -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div
@@ -147,6 +162,12 @@
             </div>
         </div>
         <!-- PATH END-->
+        <div
+            class="inline-flex items-center space-x-2 bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs px-3 py-1.5 rounded-full mb-6">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span>20 年落地經驗 · 實務彈性與集團化架構兼具</span>
+        </div>
+
         <h2 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
             用技術賦能營運，<br>
             將抽象戰略轉化為<span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">現場高效
@@ -223,7 +244,7 @@
                     </div>
                     <h4 class="font-bold text-white text-base mb-2">1. 倉儲物流營運管理</h4>
                     <p class="text-xs text-slate-300 leading-relaxed mb-2">
-                        負責進出庫、逆物流及庫存盤點之標準作業程序，確保庫存帳務一致，管控庫存損耗及費用成本。
+                        負責進出庫、逆物流及庫存盤點之標準作業，確保庫存帳務一致，管控庫存損耗及費用成本。
                     </p>
                     <p class="text-xs text-slate-400 leading-relaxed">
                         管理與第三方物流之合作關係，日常運作監控，服務品質稽核及異常處理。
