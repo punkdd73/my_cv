@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Sun | 營運流程與供應鏈轉譯專家</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Alpine.js for interactive state -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen">
+
+    <!-- Header Navigation -->
+    <nav class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center font-bold text-xl shadow-lg shadow-indigo-500/30">
+                    DS
+                </div>
+                <div>
+                    <h1 class="font-bold text-lg leading-tight">David Sun</h1>
+                    <p class="text-xs text-slate-400">營運流程與供應鏈轉譯專家</p>
+                </div>
+            </div>
+            <div class="flex space-x-6 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition">關於我</a>
+                <a href="#translator" class="hover:text-indigo-400 transition">雙向轉譯</a>
+                <a href="#tools" class="hover:text-indigo-400 transition">自研工具箱</a>
+                <a href="#workflow" class="hover:text-indigo-400 transition">工作流程圖</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="inline-flex items-center space-x-2 bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs px-3 py-1.5 rounded-full mb-6">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span>20 年落地經驗 · 實務彈性與集團化架構兼具</span>
+        </div>
+        
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
+            用技術賦能營運，<br>
+            將抽象戰略轉化為<span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">現場高效 SOP</span>
+        </h2>
+        
+        <p class="text-slate-400 text-lg max-w-3xl mb-12 leading-relaxed">
+            經歷第一線餐飲、草根電商團隊創立至大型集團營運。擅長觀察 3PL 成本結構與運作平衡點，結合自研 Python 自動化工具與 AI 數據驗證，達成極致的降本與營運增效。
+        </p>
+
+        <!-- KPI Metrics Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-indigo-500/50 transition">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-slate-400 text-sm">自動化賦能</span>
+                    <i data-lucide="cpu" class="w-6 h-6 text-indigo-400"></i>
+                </div>
+                <div class="text-3xl font-extrabold text-white mb-1">300% <span class="text-indigo-400 text-xl">+</span></div>
+                <p class="text-xs text-slate-400">自研 Python 工具鏈達成人力增效</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-cyan-500/50 transition">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-slate-400 text-sm">物流費用優化</span>
+                    <i data-lucide="trending-down" class="w-6 h-6 text-cyan-400"></i>
+                </div>
+                <div class="text-3xl font-extrabold text-white mb-1">30% <span class="text-cyan-400 text-xl">↓</span></div>
+                <p class="text-xs text-slate-400">3PL 成本結構拆解與營運降本</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-emerald-500/50 transition">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-slate-400 text-sm">進銷存治理</span>
+                    <i data-lucide="shield-check" class="w-6 h-6 text-emerald-400"></i>
+                </div>
+                <div class="text-3xl font-extrabold text-white mb-1">99.99%</div>
+                <p class="text-xs text-slate-400">倉庫作業精準度與零誤差控制</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Translator Section (信義區 ↔ 楊梅區) -->
+    <section id="translator" class="max-w-6xl mx-auto px-6 py-12" x-data="{ activeTab: 'cost' }">
+        <div class="bg-slate-800/80 border border-slate-700 rounded-3xl p-8 shadow-2xl">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-xs font-semibold text-indigo-400 tracking-wider uppercase">CORE COMPETENCY</span>
+                    <h3 class="text-2xl font-bold text-white mt-1">戰略與執行雙向轉譯器</h3>
+                    <p class="text-sm text-slate-400">將信義區高層抽象目標，無縫轉譯為楊梅區現場執行指令</p>
+                </div>
+                
+                <!-- Tab Buttons -->
+                <div class="flex p-1 bg-slate-900/80 rounded-xl border border-slate-700">
+                    <button @click="activeTab = 'cost'" :class="activeTab === 'cost' ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-white'" class="px-4 py-2 rounded-lg text-sm font-medium transition">物流降本</button>
+                    <button @click="activeTab = 'stock'" :class="activeTab === 'stock' ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-white'" class="px-4 py-2 rounded-lg text-sm font-medium transition">效期與庫齡</button>
+                    <button @click="activeTab = 'automation'" :class="activeTab === 'automation' ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-white'" class="px-4 py-2 rounded-lg text-sm font-medium transition">多倉自動化</button>
+                </div>
+            </div>
+
+            <!-- Content Card (Dynamic) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-900/60 rounded-2xl p-6 border border-slate-700/60">
+                <!-- Left: 信義區 -->
+                <div class="p-4 rounded-xl bg-indigo-950/30 border border-indigo-500/20">
+                    <div class="flex items-center space-x-2 text-indigo-400 text-xs font-bold mb-3">
+                        <i data-lucide="building-2" class="w-4 h-4"></i>
+                        <span>信義區 (高層戰略 & 抽象目標)</span>
+                    </div>
+                    <div x-show="activeTab === 'cost'">
+                        <h4 class="font-bold text-white mb-2">「本季必須調降 15% 以上的 3PL 倉儲物流費用。」</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">要求管理層在不損及出貨服務水準（SLA）的前提下，大幅削減倉儲固定營運開支。</p>
+                    </div>
+                    <div x-show="activeTab === 'stock'" x-cloak>
+                        <h4 class="font-bold text-white mb-2">「全面控管商品呆滯率，避免即期報廢損失。」</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">要求財務與營運端掌握庫齡與有效期限，確保商品流轉率極大化。</p>
+                    </div>
+                    <div x-show="activeTab === 'automation'" x-cloak>
+                        <h4 class="font-bold text-white mb-2">「多倉數據整合，提升跨倉調撥與訂單處理解決方案。」</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">希望能掌握全倉庫存動態，避免單一倉庫缺貨或重覆開量問題。</p>
+                    </div>
+                </div>
+
+                <!-- Right: 楊梅區 -->
+                <div class="p-4 rounded-xl bg-cyan-950/30 border border-cyan-500/20">
+                    <div class="flex items-center space-x-2 text-cyan-400 text-xs font-bold mb-3">
+                        <i data-lucide="warehouse" class="w-4 h-4"></i>
+                        <span>楊梅區 (現場執行 & 客觀技術)</span>
+                    </div>
+                    <div x-show="activeTab === 'cost'">
+                        <h4 class="font-bold text-white mb-2">「拆解計價模組 + 併板/批次驗入/不壓倉維操」</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">給予 3PL 談判合約降 10%，配合現場日常併板、彈性出貨時間優化，實際創造 30% 降本效益。</p>
+                    </div>
+                    <div x-show="activeTab === 'stock'" x-cloak>
+                        <h4 class="font-bold text-white mb-2">「架設 autoXlert (LINE/Slack) 30天自動預警」</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">不靠人工拉 Excel，用 Python 定時掃瞄 ERP 效期，提前 30 天觸發自動推播，責任排查無死角。</p>
+                    </div>
+                    <div x-show="activeTab === 'automation'" x-cloak>
+                        <h4 class="font-bold text-white mb-2">「部署 autoSendBK 與 autoRUKU 工具鏈」</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">自動化雙倉 FTP 傳檔與 API 快速開量，將原本 2 小時的人工比對作業縮短至 3 分鐘完成。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Self-Developed Tools Ecosystem -->
+    <section id="tools" class="max-w-6xl mx-auto px-6 py-12">
+        <div class="mb-8">
+            <span class="text-xs font-semibold text-indigo-400 tracking-wider uppercase">TOOLKIT ECOSISTEM</span>
+            <h3 class="text-2xl font-bold text-white mt-1">自研 AI / Python 自動化武器庫</h3>
+            <p class="text-sm text-slate-400">解決現場實際痛點，打造一手包辦的輕量級 ERP/SCM 工具生態系</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Tool 1 -->
+            <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:border-indigo-500/60 transition group">
+                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 mb-4 group-hover:scale-110 transition">
+                    <i data-lucide="crosshair" class="w-6 h-6"></i>
+                </div>
+                <h4 class="font-bold text-white text-lg mb-2">雷射導航彈藥箱 V13.9</h4>
+                <p class="text-xs text-slate-400 leading-relaxed mb-4">SCM 訂單列表增強標示 + 快速備註 + 移動整合外掛，徹底改善現場人員防呆作業效率。</p>
+                <span class="text-[10px] bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 px-2 py-1 rounded">VBA / Excel 巨集</span>
+            </div>
+
+            <!-- Tool 2 -->
+            <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:border-cyan-500/60 transition group">
+                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-4 group-hover:scale-110 transition">
+                    <i data-lucide="bell" class="w-6 h-6"></i>
+                </div>
+                <h4 class="font-bold text-white text-lg mb-2">autoXlert 即期品預警</h4>
+                <p class="text-xs text-slate-400 leading-relaxed mb-4">自動串接 Slack & LINE Webhook，每日常態掃描 30 天內即期品並發送卡片式警報。</p>
+                <span class="text-[10px] bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 px-2 py-1 rounded">Python / API / Webhook</span>
+            </div>
+
+            <!-- Tool 3 -->
+            <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:border-emerald-500/60 transition group">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-4 group-hover:scale-110 transition">
+                    <i data-lucide="folder-sync" class="w-6 h-6"></i>
+                </div>
+                <h4 class="font-bold text-white text-lg mb-2">autoSendBK 雙倉 FTP 管理</h4>
+                <p class="text-xs text-slate-400 leading-relaxed mb-4">實作雙向快速傳檔與備份機制，自動進行統昶/大智通轉檔 (txt/編碼) 檢驗，確保檔案零缺失。</p>
+                <span class="text-[10px] bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 px-2 py-1 rounded">Python / FTP Automation</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Interactive Diagram -->
+    <section id="workflow" class="max-w-6xl mx-auto px-6 py-12 mb-16">
+        <div class="bg-slate-800/50 border border-slate-700 rounded-3xl p-8">
+            <div class="mb-6">
+                <h3 class="text-2xl font-bold text-white">端到端營運閉環流程圖 (End-to-End Workflow)</h3>
+                <p class="text-sm text-slate-400">從需求的雙向轉譯，到 Python 自動化機制運行的完整路徑</p>
+            </div>
+
+            <!-- Visual Flowchart Cards -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-center">
+                <div class="w-full p-4 rounded-xl bg-slate-900 border border-slate-700">
+                    <div class="text-indigo-400 font-bold text-sm mb-1">Step 1. 戰略轉譯</div>
+                    <p class="text-xs text-slate-300">信義區高層 KPI 需求輸入</p>
+                </div>
+                <i data-lucide="arrow-right" class="hidden md:block w-6 h-6 text-slate-500"></i>
+                <i data-lucide="arrow-down" class="md:hidden w-6 h-6 text-slate-500 my-1"></i>
+
+                <div class="w-full p-4 rounded-xl bg-slate-900 border border-slate-700">
+                    <div class="text-cyan-400 font-bold text-sm mb-1">Step 2. 現場 SOP 確立</div>
+                    <p class="text-xs text-slate-300">楊梅區 3PL 折衝與維操優化</p>
+                </div>
+                <i data-lucide="arrow-right" class="hidden md:block w-6 h-6 text-slate-500"></i>
+                <i data-lucide="arrow-down" class="md:hidden w-6 h-6 text-slate-500 my-1"></i>
+
+                <div class="w-full p-4 rounded-xl bg-slate-900 border border-slate-700">
+                    <div class="text-emerald-400 font-bold text-sm mb-1">Step 3. Python/AI 賦能</div>
+                    <p class="text-xs text-slate-300">自動化腳本 & 數據交叉驗證</p>
+                </div>
+                <i data-lucide="arrow-right" class="hidden md:block w-6 h-6 text-slate-500"></i>
+                <i data-lucide="arrow-down" class="md:hidden w-6 h-6 text-slate-500 my-1"></i>
+
+                <div class="w-full p-4 rounded-xl bg-indigo-950/80 border border-indigo-500/50">
+                    <div class="text-white font-bold text-sm mb-1">Step 4. 實質降本增效</div>
+                    <p class="text-xs text-indigo-300">30% 降本 + 300% 增效輸出</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+        <p>© 2026 David Sun. Built with Tailwind CSS & Alpine.js.</p>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
