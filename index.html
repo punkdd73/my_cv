@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Sun | 倉儲進銷存管理專業輔助</title>
+    <title>David Sun | 倉儲進銷存管理 - 專業輔助</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -41,17 +41,18 @@
             <div class="flex items-center">
                 <div>
                     <h1 class="font-bold text-base md:text-lg leading-tight">孫大為 David, Sun Ta Wei </h1>
-                    <p class="text-xs text-slate-400">倉儲進銷存管理專業輔助</p>
+                    <p class="text-xs text-slate-400">倉儲進銷存管理 - 專業輔助</p>
                 </div>
             </div>
 
             <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
                 <a href="#about" class="hover:text-indigo-400 transition">關於我</a>
-                <a href="#expectations" class="hover:text-indigo-400 transition">期望工作內容</a>
-                <a href="#translator" class="hover:text-indigo-400 transition">雙向轉譯</a>
-                <a href="#tools" class="hover:text-indigo-400 transition">自研工具箱</a>
+                <a href="#expectations" class="hover:text-indigo-400 transition">期望工作</a>
+                <a href="#translator" class="hover:text-indigo-400 transition">雙向轉譯官</a>
+                <a href="#tools" class="hover:text-indigo-400 transition">自研工具鏈</a>
                 <a href="#workflow" class="hover:text-indigo-400 transition">營運流程圖</a>
+                <a href="#catchphrases" class="hover:text-indigo-400 transition">口頭禪</a>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -74,15 +75,32 @@
         <div x-show="open" style="display: none;"
             class="md:hidden border-t border-slate-800 bg-slate-900/95 px-6 py-4 space-y-3 text-sm font-medium text-slate-300">
             <a href="#about" @click="open = false" class="block hover:text-indigo-400 py-1 transition">關於我</a>
-            <a href="#expectations" @click="open = false" class="block hover:text-indigo-400 py-1 transition">期望工作內容</a>
-            <a href="#translator" @click="open = false" class="block hover:text-indigo-400 py-1 transition">雙向轉譯</a>
-            <a href="#tools" @click="open = false" class="block hover:text-indigo-400 py-1 transition">自研工具箱</a>
+            <a href="#expectations" @click="open = false" class="block hover:text-indigo-400 py-1 transition">期望工作</a>
+            <a href="#translator" @click="open = false" class="block hover:text-indigo-400 py-1 transition">雙向轉譯官</a>
+            <a href="#tools" @click="open = false" class="block hover:text-indigo-400 py-1 transition">自研工具鏈</a>
             <a href="#workflow" @click="open = false" class="block hover:text-indigo-400 py-1 transition">營運流程圖</a>
+            <a href="#catchphrases" @click="open = false" class="block hover:text-indigo-400 py-1 transition">口頭禪</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="about" class="max-w-6xl mx-auto px-6 py-16">
+
+        <div
+            class="inline-flex items-center space-x-2 bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs px-3 py-1.5 rounded-full mb-6">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span>20 年落地經驗 · 實務彈性與集團化架構兼具</span>
+        </div>
+
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
+            用技術賦能營運，<br>
+            將抽象戰略轉化為<span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">現場高效SOP</span>
+        </h2>
+
+        <p class="text-slate-400 text-lg max-w-3xl mb-12 leading-relaxed">
+            經歷一線餐飲、草根電商團隊創立、大型集團部門協作。擅長觀察3PL成本結構與運作平衡點，結合AI自動化與數據驗證，達成降本增效最佳化。
+        </p>
 
         <!-- PATH -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -98,7 +116,7 @@
                 <ul class="space-y-2 text-xs text-slate-300">
                     <li class="flex items-center space-x-2">
                         <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-                        <span>了解基層心態</span>
+                        <span>深刻了解基層心態</span>
                     </li>
                     <li class="flex items-center space-x-2">
                         <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
@@ -123,11 +141,11 @@
                 <ul class="space-y-2 text-xs text-slate-300">
                     <li class="flex items-center space-x-2">
                         <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
-                        <span>傳產轉型，從0開始</span>
+                        <span>投身傳產轉型，從0開始</span>
                     </li>
                     <li class="flex items-center space-x-2">
                         <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
-                        <span>倉儲、採購、行銷、客服 全領域親自架構運行</span>
+                        <span>倉儲、採購、行銷、客服 全領域親手規畫運行</span>
                     </li>
                     <li class="flex items-center space-x-2">
                         <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
@@ -162,21 +180,11 @@
             </div>
         </div>
         <!-- PATH END-->
-        <div
-            class="inline-flex items-center space-x-2 bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs px-3 py-1.5 rounded-full mb-6">
-            <i data-lucide="sparkles" class="w-4 h-4"></i>
-            <span>20 年落地經驗 · 實務彈性與集團化架構兼具</span>
+
+        <div class="mb-8">
+            <span class="text-xs font-semibold text-indigo-400 tracking-wider uppercase">2024/07-2026/08</span>
+            <h3 class="text-2xl font-bold text-white mt-1">PRESCO 統一數網 任職「倉儲物流專員」實績</h3>
         </div>
-
-        <h2 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
-            用技術賦能營運，<br>
-            將抽象戰略轉化為<span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">現場高效
-                SOP</span>
-        </h2>
-
-        <p class="text-slate-400 text-lg max-w-3xl mb-12 leading-relaxed">
-            經歷第一線餐飲、草根電商團隊創立至大型集團營運。擅長觀察3PL成本結構與運作平衡點，結合AI自動化與數據驗證，達成極致的降本與營運增效。
-        </p>
 
         <!-- KPI Metrics Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -188,7 +196,7 @@
                 </div>
                 <div class="text-3xl font-extrabold text-white mb-1">300% <span class="text-indigo-400 text-xl">+</span>
                 </div>
-                <p class="text-xs text-slate-400">AI自研Python工具鏈達成人力增效</p>
+                <p class="text-xs text-slate-400">透過自研AI，開發微型自動化工具鏈，達成3倍人力增效</p>
             </div>
 
             <div class="p-6 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-cyan-500/50 transition">
@@ -198,7 +206,7 @@
                 </div>
                 <div class="text-3xl font-extrabold text-white mb-1">30% <span class="text-cyan-400 text-xl">↓</span>
                 </div>
-                <p class="text-xs text-slate-400">3PL成本結構拆解與營運降本</p>
+                <p class="text-xs text-slate-400">深入3PL日常運作，重塑作業模式，倉儲物流有效降本</p>
             </div>
 
             <div
@@ -208,7 +216,7 @@
                     <i data-lucide="shield-check" class="w-6 h-6 text-emerald-400"></i>
                 </div>
                 <div class="text-3xl font-extrabold text-white mb-1">99.99%</div>
-                <p class="text-xs text-slate-400">倉庫作業精準度與零誤差控制</p>
+                <p class="text-xs text-slate-400">倉儲作業精準度大幅提升，檔期及日常進銷存幾零誤差</p>
             </div>
         </div>
     </section>
@@ -295,7 +303,7 @@
                         熟悉ERP邏輯及系統架構，純人工、半自動或高度自動化流程皆可勝任。
                     </p>
                     <p class="text-xs text-slate-400 leading-relaxed">
-                        具vibe coding能力，結合AI開發微型工具，將局部低效人工作業轉為自動化流程。
+                        具Vibe Coding能力，結合AI開發微型工具，將局部低效人工作業轉為自動化流程。
                     </p>
                 </div>
             </div>
@@ -319,7 +327,7 @@
                     </div>
                     <h4 class="font-bold text-white text-base mb-2">4. 跨部門的供應鏈協調中心</h4>
                     <p class="text-xs text-slate-300 leading-relaxed mb-2">
-                        擔任物流窗口代表，協同採購、行銷、財務、資訊等部門解決供應鏈端的問題。
+                        擔任物流窗口代表，協同採購、行銷、財務、資訊等部門解決進銷存與物流問題。
                     </p>
                     <p class="text-xs text-slate-400 leading-relaxed">
                         透過客訴與異常個案處理，推動「跨部門問題溯源」與「整體預防機制」規劃工作。
@@ -343,7 +351,7 @@
                     </div>
                     <h4 class="font-bold text-white text-base mb-2">5. 架構規劃及數據決策</h4>
                     <p class="text-xs text-slate-300 leading-relaxed mb-2">
-                        針對多平台、多通路、多屬性作業，規劃具擴充性的之倉儲物流作業架構及流程。
+                        針對多平台、多通路、多屬性作業，規劃具擴充性之倉儲物流作業架構及流程。
                     </p>
                     <p class="text-xs text-slate-400 leading-relaxed">
                         負責倉儲物流相關數據的整理編輯，提供具參考價值的資訊供決策層追蹤判斷使用。
@@ -364,8 +372,19 @@
             <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
                 <div>
                     <span class="text-xs font-semibold text-indigo-400 tracking-wider uppercase">CORE COMPETENCY</span>
-                    <h3 class="text-2xl font-bold text-white mt-1">戰略與執行雙向轉譯器</h3>
-                    <p class="text-sm text-slate-400">將信義區高層抽象目標，無縫轉譯為楊梅區現場執行指令</p>
+                    <h3 class="text-2xl font-bold text-white mt-1">戰略與執行雙向轉譯實例</h3>
+                    <p class="text-sm text-slate-400 mb-3">將信義區高層抽象目標，無縫轉譯為楊梅區現場執行指令</p>
+
+                    <!-- Legend -->
+                    <div
+                        class="flex flex-wrap items-center gap-3 text-xs font-medium bg-slate-900/50 inline-flex px-3 py-2 rounded-lg border border-slate-700/50">
+                        <span class="text-indigo-400 flex items-center"><i data-lucide="building-2"
+                                class="w-3.5 h-3.5 mr-1.5"></i>信義區 = 總部</span>
+                        <span class="text-amber-400 flex items-center"><i data-lucide="user-cog"
+                                class="w-3.5 h-3.5 mr-1.5"></i>轉譯員 = 我</span>
+                        <span class="text-cyan-400 flex items-center"><i data-lucide="warehouse"
+                                class="w-3.5 h-3.5 mr-1.5"></i>楊梅區 = 倉庫</span>
+                    </div>
                 </div>
 
                 <!-- Tab Buttons -->
@@ -375,56 +394,106 @@
                         class="px-4 py-2 rounded-lg text-sm font-medium transition">物流降本</button>
                     <button @click="activeTab = 'stock'"
                         :class="activeTab === 'stock' ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-white'"
-                        class="px-4 py-2 rounded-lg text-sm font-medium transition">效期與庫齡</button>
+                        class="px-4 py-2 rounded-lg text-sm font-medium transition">即期品管控</button>
                     <button @click="activeTab = 'automation'"
                         :class="activeTab === 'automation' ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-white'"
-                        class="px-4 py-2 rounded-lg text-sm font-medium transition">多倉自動化</button>
+                        class="px-4 py-2 rounded-lg text-sm font-medium transition">檔期管理</button>
                 </div>
             </div>
 
             <!-- Content Card (Dynamic) -->
             <div
-                class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-900/60 rounded-2xl p-6 border border-slate-700/60">
+                class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-slate-900/60 rounded-2xl p-6 border border-slate-700/60">
                 <!-- Left: 信義區 -->
-                <div class="p-4 rounded-xl bg-indigo-950/30 border border-indigo-500/20">
-                    <div class="flex items-center space-x-2 text-indigo-400 text-xs font-bold mb-3">
+                <div class="p-5 rounded-xl bg-indigo-950/30 border border-indigo-500/20 flex flex-col h-full">
+                    <div
+                        class="flex items-center space-x-2 text-indigo-400 text-xs font-bold mb-4 pb-3 border-b border-indigo-500/20">
                         <i data-lucide="building-2" class="w-4 h-4"></i>
-                        <span>信義區 (高層戰略 & 抽象目標)</span>
+                        <span>信義區</span>
                     </div>
-                    <div x-show="activeTab === 'cost'">
-                        <h4 class="font-bold text-white mb-2">「本季必須調降 15% 以上的 3PL 倉儲物流費用。」</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed">要求管理層在不損及出貨服務水準（SLA）的前提下，大幅削減倉儲固定營運開支。</p>
+                    <div x-show="activeTab === 'cost'" class="flex-grow"
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 translate-y-2">
+                        <h4 class="font-bold text-white mb-2">「本年度3PL倉儲物流費用目標降低15%以上。」</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">要求在不損及出貨服務水準的前提下，大幅削減倉儲固定營運開支。</p>
                     </div>
-                    <div x-show="activeTab === 'stock'" x-cloak>
-                        <h4 class="font-bold text-white mb-2">「全面控管商品呆滯率，避免即期報廢損失。」</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed">要求財務與營運端掌握庫齡與有效期限，確保商品流轉率極大化。</p>
+                    <div x-show="activeTab === 'stock'" x-cloak class="flex-grow"
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 translate-y-2">
+                        <h4 class="font-bold text-white mb-2">「全面控管商品效期，避免即期報廢損失。」</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">要求倉儲單位協助營運端動態掌握有效期限，確保商品去化週期健康。</p>
                     </div>
-                    <div x-show="activeTab === 'automation'" x-cloak>
-                        <h4 class="font-bold text-white mb-2">「多倉數據整合，提升跨倉調撥與訂單處理解決方案。」</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed">希望能掌握全倉庫存動態，避免單一倉庫缺貨或重覆開量問題。</p>
+                    <div x-show="activeTab === 'automation'" x-cloak class="flex-grow"
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 translate-y-2">
+                        <h4 class="font-bold text-white mb-2">「大型檔期多端點銷售，確保庫存控管與整體出貨效率。」</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            要求在預購、團購、一般訂單等多端點銷售情況下，掌握全局庫存動態，避免超賣，並於指定區間完成出貨。</p>
+                    </div>
+                </div>
+
+                <!-- Middle: 轉譯員 (我) -->
+                <div
+                    class="p-5 rounded-xl bg-amber-950/30 border border-amber-500/30 flex flex-col h-full shadow-[0_0_15px_rgba(245,158,11,0.1)] relative">
+                    <div
+                        class="flex items-center justify-between text-amber-400 text-xs font-bold mb-4 pb-3 border-b border-amber-500/30">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="user-cog" class="w-4 h-4"></i>
+                            <span>轉譯員</span>
+                        </div>
+                        <i data-lucide="arrow-right-left" class="w-4 h-4 opacity-50"></i>
+                    </div>
+                    <div x-show="activeTab === 'cost'" class="flex-grow"
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 translate-y-2">
+                        <h4 class="font-bold text-white mb-2">深入現場拆解流程痛點</h4>
+                        <p class="text-xs text-amber-200/80 leading-relaxed">
+                            同步分析報價與作業流程，找出合約突破點以及隱藏成本；確認實際目標，擬定談判策略。</p>
+                    </div>
+                    <div x-show="activeTab === 'stock'" x-cloak class="flex-grow"
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 translate-y-2">
+                        <h4 class="font-bold text-white mb-2">盤點現狀與制定模型</h4>
+                        <p class="text-xs text-amber-200/80 leading-relaxed">
+                            盤點營運單位作業模式，理解對方需求，找到合適切入點；同時評估系統侷限性，制定最佳同步策略。</p>
+                    </div>
+                    <div x-show="activeTab === 'automation'" x-cloak class="flex-grow"
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 translate-y-2">
+                        <h4 class="font-bold text-white mb-2">評估量體，設計自動化管理架構</h4>
+                        <p class="text-xs text-amber-200/80 leading-relaxed">
+                            評估量體及複雜度，跨部門擬定整體作業架構。預先建立檔期專用雲端庫存管理表，與營運端、客服端、行銷端保持資訊同步。並確認所有自動化工具正常運作。</p>
                     </div>
                 </div>
 
                 <!-- Right: 楊梅區 -->
-                <div class="p-4 rounded-xl bg-cyan-950/30 border border-cyan-500/20">
-                    <div class="flex items-center space-x-2 text-cyan-400 text-xs font-bold mb-3">
+                <div class="p-5 rounded-xl bg-cyan-950/30 border border-cyan-500/20 flex flex-col h-full">
+                    <div
+                        class="flex items-center space-x-2 text-cyan-400 text-xs font-bold mb-4 pb-3 border-b border-cyan-500/20">
                         <i data-lucide="warehouse" class="w-4 h-4"></i>
-                        <span>楊梅區 (現場執行 & 客觀技術)</span>
+                        <span>楊梅區</span>
                     </div>
-                    <div x-show="activeTab === 'cost'">
-                        <h4 class="font-bold text-white mb-2">「拆解計價模組 + 併板/批次驗入/不壓倉維操」</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed">給予 3PL 談判合約降 10%，配合現場日常併板、彈性出貨時間優化，實際創造 30%
-                            降本效益。</p>
+                    <div x-show="activeTab === 'cost'" class="flex-grow"
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 translate-y-2">
+                        <h4 class="font-bold text-white mb-2">「拆解計價模組 + 改善作業流程」</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            與3PL談判合約降價以外，透過協商日常作業優化，例如併板、併箱、包材管控、附加服務等策略，創造額外降幅。</p>
                     </div>
-                    <div x-show="activeTab === 'stock'" x-cloak>
-                        <h4 class="font-bold text-white mb-2">「架設 autoXlert (LINE/Slack) 30天自動預警」</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed">不靠人工拉 Excel，用 Python 定時掃瞄 ERP 效期，提前 30
-                            天觸發自動推播，責任排查無死角。</p>
+                    <div x-show="activeTab === 'stock'" x-cloak class="flex-grow"
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 translate-y-2">
+                        <h4 class="font-bold text-white mb-2">「內部開發自動化預警系統」</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            評估此專案特性「微型」、「動態」、「即時」，決定以AI開發預警系統，每天定時透過公司群組(LINE、Slack)自動通報，加強聚焦。任何需求或調整可快速溝通修正。</p>
                     </div>
-                    <div x-show="activeTab === 'automation'" x-cloak>
-                        <h4 class="font-bold text-white mb-2">「部署 autoSendBK 與 autoRUKU 工具鏈」</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed">自動化雙倉 FTP 傳檔與 API 快速開量，將原本 2 小時的人工比對作業縮短至 3
-                            分鐘完成。</p>
+                    <div x-show="activeTab === 'automation'" x-cloak class="flex-grow"
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 translate-y-2">
+                        <h4 class="font-bold text-white mb-2">「協調作業量能，預先規劃應對策略」</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            提前與現場確認實際作業量能，透過歷史數據預估作業量，擬定最佳出貨時程與人力配置，必要時安排預加工。預先溝通可能異常狀況與應對方式，
+                            生成臨時作業SOP。</p>
                     </div>
                 </div>
             </div>
@@ -437,56 +506,255 @@
     </div>
 
     <!-- Self-Developed Tools Ecosystem -->
-    <section id="tools" class="max-w-6xl mx-auto px-6 py-12">
+    <section id="tools" class="max-w-6xl mx-auto px-6 py-12" x-data="{
+            demoOpen: false,
+            demoTitle: '',
+            demoUrl: '',
+            openDemo(title, url) {
+                this.demoTitle = title;
+                this.demoUrl = url;
+                this.demoOpen = true;
+                document.body.style.overflow = 'hidden';
+                history.pushState({ modalOpen: true }, '');
+            },
+            closeDemo() {
+                if (this.demoOpen) {
+                    this.demoOpen = false;
+                    document.body.style.overflow = '';
+                    if (history.state && history.state.modalOpen) {
+                        history.back();
+                    }
+                }
+            }
+        }" @popstate.window="if (demoOpen) { demoOpen = false; document.body.style.overflow = ''; }">
+
         <div class="mb-8">
             <span class="text-xs font-semibold text-indigo-400 tracking-wider uppercase">TOOLKIT ECOSYSTEM</span>
-            <h3 class="text-2xl font-bold text-white mt-1">自研 AI / Python 自動化武器庫</h3>
-            <p class="text-sm text-slate-400">解決現場實際痛點，打造一手包辦的輕量級 ERP/SCM 工具生態系</p>
+            <h3 class="text-2xl font-bold text-white mt-1">AI微型自動化工具鏈</h3>
+            <p class="text-sm text-slate-400">針對實際作業痛點，透過Vibe Coding打造輕量級WMS工具，特化作業環境，減少複雜度並提升效率。</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
             <!-- Tool 1 -->
             <div
-                class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:border-indigo-500/60 transition group">
+                class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:border-blue-500/60 transition group flex flex-col h-full">
                 <div
-                    class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 mb-4 group-hover:scale-110 transition">
-                    <i data-lucide="crosshair" class="w-6 h-6"></i>
+                    class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition">
+                    <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
                 </div>
-                <h4 class="font-bold text-white text-lg mb-2">雷射導航彈藥箱 V13.9</h4>
-                <p class="text-xs text-slate-400 leading-relaxed mb-4">SCM 訂單列表增強標示 + 快速備註 + 移動整合外掛，徹底改善現場人員防呆作業效率。</p>
-                <span
-                    class="text-[10px] bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 px-2 py-1 rounded">VBA
-                    / Excel 巨集</span>
+                <h4 class="font-bold text-white text-lg mb-2">批次扣庫/轉檔/併單模板</h4>
+                <ul class="text-xs text-slate-300 mb-4 space-y-1.5">
+                    <li class="flex items-center"><i data-lucide="check-circle-2"
+                            class="w-3.5 h-3.5 text-blue-400 mr-2"></i>模板防呆設計降低出錯率</li>
+                    <li class="flex items-center"><i data-lucide="check-circle-2"
+                            class="w-3.5 h-3.5 text-blue-400 mr-2"></i>快速轉換 3PL 專屬格式</li>
+                </ul>
+                <p class="text-xs text-slate-400 leading-relaxed mb-4 flex-grow">
+                    透過EXCEL與VBA檔案串接，批次完成扣庫、轉檔、併單作業，快速將本地訂單轉為3PL所需格式，連帶完成庫存紀錄。模板式管理有效降低出錯率及學習、維護成本。
+                </p>
+                <div class="mt-auto flex flex-col space-y-4">
+                    <div>
+                        <span
+                            class="text-[10px] bg-blue-500/10 text-blue-300 border border-blue-500/20 px-2 py-1 rounded">EXCEL
+                            / VBA</span>
+                    </div>
+                    <button @click="openDemo('批次扣庫/轉檔/併單模板', 'tools/tool1.gif')"
+                        class="w-full py-2 bg-blue-500/20 hover:bg-blue-500/40 text-blue-300 rounded-lg text-xs font-semibold transition flex items-center justify-center">
+                        <i data-lucide="play-circle" class="w-4 h-4 mr-2"></i>觀看 DEMO
+                    </button>
+                </div>
             </div>
 
             <!-- Tool 2 -->
             <div
-                class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:border-cyan-500/60 transition group">
+                class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:border-fuchsia-500/60 transition group flex flex-col h-full">
                 <div
-                    class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-4 group-hover:scale-110 transition">
-                    <i data-lucide="bell" class="w-6 h-6"></i>
+                    class="w-12 h-12 rounded-xl bg-fuchsia-500/10 border border-fuchsia-500/30 flex items-center justify-center text-fuchsia-400 mb-4 group-hover:scale-110 transition">
+                    <i data-lucide="rocket" class="w-6 h-6"></i>
                 </div>
-                <h4 class="font-bold text-white text-lg mb-2">autoXlert 即期品預警</h4>
-                <p class="text-xs text-slate-400 leading-relaxed mb-4">自動串接 Slack & LINE Webhook，每日常態掃描 30
-                    天內即期品並發送卡片式警報。</p>
-                <span
-                    class="text-[10px] bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 px-2 py-1 rounded">Python
-                    / API / Webhook</span>
+                <h4 class="font-bold text-white text-lg mb-2">雷射導航彈藥箱 V13.9</h4>
+                <ul class="text-xs text-slate-300 mb-4 space-y-1.5">
+                    <li class="flex items-center"><i data-lucide="check-circle-2"
+                            class="w-3.5 h-3.5 text-fuchsia-400 mr-2"></i>SCM 後台視覺化增強</li>
+                    <li class="flex items-center"><i data-lucide="check-circle-2"
+                            class="w-3.5 h-3.5 text-fuchsia-400 mr-2"></i>熱鍵設定加速訂單處理</li>
+                </ul>
+                <p class="text-xs text-slate-400 leading-relaxed mb-4 flex-grow">
+                    SCM後台訂單列表增強標示 + 快速備註 + 瞬移外掛，透過視覺化引導及快速鍵設定，大幅提升檔期作業效率。
+                </p>
+                <div class="mt-auto flex flex-col space-y-4">
+                    <div>
+                        <span
+                            class="text-[10px] bg-fuchsia-500/10 text-fuchsia-300 border border-fuchsia-500/20 px-2 py-1 rounded">JavaScript
+                            / Tampermonkey</span>
+                    </div>
+                    <button @click="openDemo('雷射導航彈藥箱 V13.9', 'tools/tool2.gif')"
+                        class="w-full py-2 bg-fuchsia-500/20 hover:bg-fuchsia-500/40 text-fuchsia-300 rounded-lg text-xs font-semibold transition flex items-center justify-center">
+                        <i data-lucide="play-circle" class="w-4 h-4 mr-2"></i>觀看 DEMO
+                    </button>
+                </div>
             </div>
 
             <!-- Tool 3 -->
             <div
-                class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:border-emerald-500/60 transition group">
+                class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:border-violet-500/60 transition group flex flex-col h-full">
+                <div
+                    class="w-12 h-12 rounded-xl bg-violet-500/10 border border-violet-500/30 flex items-center justify-center text-violet-400 mb-4 group-hover:scale-110 transition">
+                    <i data-lucide="send" class="w-6 h-6"></i>
+                </div>
+                <h4 class="font-bold text-white text-lg mb-2">AutoM 訊息整合系統</h4>
+                <ul class="text-xs text-slate-300 mb-4 space-y-1.5">
+                    <li class="flex items-center"><i data-lucide="check-circle-2"
+                            class="w-3.5 h-3.5 text-violet-400 mr-2"></i>一鍵完成報表自動派發</li>
+                    <li class="flex items-center"><i data-lucide="check-circle-2"
+                            class="w-3.5 h-3.5 text-violet-400 mr-2"></i>庫存呆滯品雲端同步更新</li>
+                </ul>
+                <p class="text-xs text-slate-400 leading-relaxed mb-4 flex-grow">
+                    一鍵發送日報、周報至指定收件人信箱或雲端硬碟，同時透過 <strong>autoStock庫存外掛</strong> 完成庫齡及呆滯品資料雲端更新。另有
+                    <strong>autoRetun退貨模組</strong> 一鍵完成退貨通報。
+                </p>
+                <div class="mt-auto flex flex-col space-y-4">
+                    <div>
+                        <span
+                            class="text-[10px] bg-violet-500/10 text-violet-300 border border-violet-500/20 px-2 py-1 rounded">Python
+                            / Google Sheets</span>
+                    </div>
+                    <button @click="openDemo('AutoM 訊息整合系統', 'tools/tool3.gif')"
+                        class="w-full py-2 bg-violet-500/20 hover:bg-violet-500/40 text-violet-300 rounded-lg text-xs font-semibold transition flex items-center justify-center">
+                        <i data-lucide="play-circle" class="w-4 h-4 mr-2"></i>觀看 DEMO
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tool 4 -->
+            <div
+                class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:border-amber-500/60 transition group flex flex-col h-full">
+                <div
+                    class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-4 group-hover:scale-110 transition">
+                    <i data-lucide="bell-ring" class="w-6 h-6"></i>
+                </div>
+                <h4 class="font-bold text-white text-lg mb-2">autoXlert 即期品預警</h4>
+                <ul class="text-xs text-slate-300 mb-4 space-y-1.5">
+                    <li class="flex items-center"><i data-lucide="check-circle-2"
+                            class="w-3.5 h-3.5 text-amber-400 mr-2"></i>30 天前自動觸發推播</li>
+                    <li class="flex items-center"><i data-lucide="check-circle-2"
+                            class="w-3.5 h-3.5 text-amber-400 mr-2"></i>多平台 (Slack/LINE) 警報</li>
+                </ul>
+                <p class="text-xs text-slate-400 leading-relaxed mb-4 flex-grow">
+                    自動串接 Slack & LINE Webhook，每日常態掃描 30 天內即期品，並發送卡片式警報。整合例行通知、即期示警、到期下架流程，簡化業務單位認知，加強去化效率。
+                </p>
+                <div class="mt-auto flex flex-col space-y-4">
+                    <div>
+                        <span
+                            class="text-[10px] bg-amber-500/10 text-amber-300 border border-amber-500/20 px-2 py-1 rounded">Python
+                            / API / Webhook</span>
+                    </div>
+                    <button @click="openDemo('autoXlert 即期品預警', 'tools/tool4.gif')"
+                        class="w-full py-2 bg-amber-500/20 hover:bg-amber-500/40 text-amber-300 rounded-lg text-xs font-semibold transition flex items-center justify-center">
+                        <i data-lucide="play-circle" class="w-4 h-4 mr-2"></i>觀看 DEMO
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tool 5 -->
+            <div
+                class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:border-emerald-500/60 transition group flex flex-col h-full">
                 <div
                     class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-4 group-hover:scale-110 transition">
-                    <i data-lucide="folder-sync" class="w-6 h-6"></i>
+                    <i data-lucide="server" class="w-6 h-6"></i>
                 </div>
-                <h4 class="font-bold text-white text-lg mb-2">autoSendBK 雙倉 FTP 管理</h4>
-                <p class="text-xs text-slate-400 leading-relaxed mb-4">實作雙向快速傳檔與備份機制，自動進行統昶/大智通轉檔 (txt/編碼) 檢驗，確保檔案零缺失。
+                <h4 class="font-bold text-white text-lg mb-2">autoSendBK FTP管理系統</h4>
+                <ul class="text-xs text-slate-300 mb-4 space-y-1.5">
+                    <li class="flex items-center"><i data-lucide="check-circle-2"
+                            class="w-3.5 h-3.5 text-emerald-400 mr-2"></i>雙向快速傳檔備份機制</li>
+                    <li class="flex items-center"><i data-lucide="check-circle-2"
+                            class="w-3.5 h-3.5 text-emerald-400 mr-2"></i>整合黑貓物流與庫存 API</li>
+                </ul>
+                <p class="text-xs text-slate-400 leading-relaxed mb-4 flex-grow">
+                    一鍵完成3PL雙向快速傳檔及備份作業。整合 <strong>autoRUKU API快速庫存調整模組</strong> 及
+                    <strong>autoTcat黑貓配送狀態查詢模組</strong>，成為日常檔案傳輸中台，有效提升例行作業效率。
                 </p>
-                <span
-                    class="text-[10px] bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 px-2 py-1 rounded">Python
-                    / FTP Automation</span>
+                <div class="mt-auto flex flex-col space-y-4">
+                    <div>
+                        <span
+                            class="text-[10px] bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 px-2 py-1 rounded">Python
+                            / FTP Automation</span>
+                    </div>
+                    <button @click="openDemo('autoSendBK FTP管理系統', 'tools/tool5.gif')"
+                        class="w-full py-2 bg-emerald-500/20 hover:bg-emerald-500/40 text-emerald-300 rounded-lg text-xs font-semibold transition flex items-center justify-center">
+                        <i data-lucide="play-circle" class="w-4 h-4 mr-2"></i>觀看 DEMO
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tool 6 -->
+            <div
+                class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:border-rose-500/60 transition group flex flex-col h-full">
+                <div
+                    class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400 mb-4 group-hover:scale-110 transition">
+                    <i data-lucide="keyboard" class="w-6 h-6"></i>
+                </div>
+                <h4 class="font-bold text-white text-lg mb-2">autoNtab 熱鍵金手指</h4>
+                <ul class="text-xs text-slate-300 mb-4 space-y-1.5">
+                    <li class="flex items-center"><i data-lucide="check-circle-2"
+                            class="w-3.5 h-3.5 text-rose-400 mr-2"></i>自動向下填充與另存</li>
+                    <li class="flex items-center"><i data-lucide="check-circle-2"
+                            class="w-3.5 h-3.5 text-rose-400 mr-2"></i>一鍵桌面檔案歸類收納</li>
+                </ul>
+                <p class="text-xs text-slate-400 leading-relaxed mb-4 flex-grow">
+                    自行設定常用熱鍵，整合EXCEL自動向下填充、自動另存檔案、桌面檔案自動歸檔等實用功能，減少往返資料夾，大幅增加日常操作效率。
+                </p>
+                <div class="mt-auto flex flex-col space-y-4">
+                    <div>
+                        <span
+                            class="text-[10px] bg-rose-500/10 text-rose-300 border border-rose-500/20 px-2 py-1 rounded">Python
+                            / Automation</span>
+                    </div>
+                    <button @click="openDemo('autoNtab 熱鍵金手指', 'tools/tool6.gif')"
+                        class="w-full py-2 bg-rose-500/20 hover:bg-rose-500/40 text-rose-300 rounded-lg text-xs font-semibold transition flex items-center justify-center">
+                        <i data-lucide="play-circle" class="w-4 h-4 mr-2"></i>觀看 DEMO
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Global Modal for Tools Demo -->
+        <div x-show="demoOpen" class="fixed inset-0 z-50 flex items-center justify-center px-4" style="display: none;"
+            x-cloak>
+            <!-- Backdrop -->
+            <div x-show="demoOpen" x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0" class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm"
+                @click="closeDemo()"></div>
+
+            <!-- Modal Content -->
+            <div x-show="demoOpen" x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 translate-y-8 scale-95"
+                x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+                x-transition:leave="transition ease-in duration-200"
+                x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+                x-transition:leave-end="opacity-0 translate-y-8 scale-95"
+                class="relative bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl w-full max-w-4xl overflow-hidden flex flex-col max-h-[90vh]">
+
+                <!-- Header -->
+                <div class="flex items-center justify-between px-6 py-4 border-b border-slate-800 bg-slate-900 z-10">
+                    <h3 class="text-lg font-bold text-white flex items-center space-x-2">
+                        <i data-lucide="play-circle" class="w-5 h-5 text-indigo-400"></i>
+                        <span x-text="demoTitle"></span>
+                    </h3>
+                    <button @click="closeDemo()"
+                        class="text-slate-400 hover:text-white transition p-1 bg-slate-800/50 hover:bg-slate-700 rounded-lg">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <!-- Body (Image/GIF Container) -->
+                <div class="p-6 overflow-y-auto flex-grow flex items-center justify-center bg-slate-950/50">
+                    <img :src="demoUrl" :alt="demoTitle + ' Demo'"
+                        class="max-w-full h-auto rounded-lg border border-slate-800 shadow-lg object-contain">
+                </div>
             </div>
         </div>
     </section>
@@ -542,6 +810,100 @@
         </div>
     </section>
 
+    <!-- Section Divider -->
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="border-t border-slate-800/80"></div>
+    </div>
+
+    <!-- Catchphrases Section -->
+    <section id="catchphrases" class="max-w-6xl mx-auto px-6 py-12 mb-8">
+        <div class="mb-8">
+            <span class="text-xs font-semibold text-rose-400 tracking-wider uppercase">FUN FACTS</span>
+            <h3 class="text-2xl font-bold text-white mt-1">專屬口頭禪</h3>
+            <p class="text-sm text-slate-400">點擊播放鍵，聽聽我平時最常噴出的幾句話。</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Phrase 1 -->
+            <div
+                class="flex items-center justify-between p-4 rounded-xl bg-slate-800/40 border border-slate-700/60 hover:border-rose-500/50 transition group">
+                <div class="flex items-center space-x-3 w-full">
+                    <button onclick="playAudio('audio/1.m4a')"
+                        class="flex-shrink-0 w-10 h-10 rounded-full bg-rose-500/10 text-rose-400 flex items-center justify-center hover:bg-rose-500 hover:text-white transition group-hover:scale-110"
+                        aria-label="Play Catchphrase 1">
+                        <i data-lucide="play" class="w-5 h-5 ml-1"></i>
+                    </button>
+                    <span class="font-medium text-white text-sm">沒辦法！...好啦其實有。</span>
+                </div>
+            </div>
+
+            <!-- Phrase 2 -->
+            <div
+                class="flex items-center justify-between p-4 rounded-xl bg-slate-800/40 border border-slate-700/60 hover:border-amber-500/50 transition group">
+                <div class="flex items-center space-x-3 w-full">
+                    <button onclick="playAudio('audio/2.m4a')"
+                        class="flex-shrink-0 w-10 h-10 rounded-full bg-amber-500/10 text-amber-400 flex items-center justify-center hover:bg-amber-500 hover:text-white transition group-hover:scale-110"
+                        aria-label="Play Catchphrase 2">
+                        <i data-lucide="play" class="w-5 h-5 ml-1"></i>
+                    </button>
+                    <span class="font-medium text-white text-sm">我們希望解決什麼問題？</span>
+                </div>
+            </div>
+
+            <!-- Phrase 3 -->
+            <div
+                class="flex items-center justify-between p-4 rounded-xl bg-slate-800/40 border border-slate-700/60 hover:border-emerald-500/50 transition group">
+                <div class="flex items-center space-x-3 w-full">
+                    <button onclick="playAudio('audio/3.m4a')"
+                        class="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-400 flex items-center justify-center hover:bg-emerald-500 hover:text-white transition group-hover:scale-110"
+                        aria-label="Play Catchphrase 3">
+                        <i data-lucide="play" class="w-5 h-5 ml-1"></i>
+                    </button>
+                    <span class="font-medium text-white text-sm">如果大家都OK我就沒意見。</span>
+                </div>
+            </div>
+
+            <!-- Phrase 4 -->
+            <div
+                class="flex items-center justify-between p-4 rounded-xl bg-slate-800/40 border border-slate-700/60 hover:border-cyan-500/50 transition group">
+                <div class="flex items-center space-x-3 w-full">
+                    <button onclick="playAudio('audio/4.m4a')"
+                        class="flex-shrink-0 w-10 h-10 rounded-full bg-cyan-500/10 text-cyan-400 flex items-center justify-center hover:bg-cyan-500 hover:text-white transition group-hover:scale-110"
+                        aria-label="Play Catchphrase 4">
+                        <i data-lucide="play" class="w-5 h-5 ml-1"></i>
+                    </button>
+                    <span class="font-medium text-white text-sm">冷靜! 冷靜! 大家冷靜!</span>
+                </div>
+            </div>
+
+            <!-- Phrase 5 -->
+            <div
+                class="flex items-center justify-between p-4 rounded-xl bg-slate-800/40 border border-slate-700/60 hover:border-violet-500/50 transition group">
+                <div class="flex items-center space-x-3 w-full">
+                    <button onclick="playAudio('audio/5.m4a')"
+                        class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-500/10 text-violet-400 flex items-center justify-center hover:bg-violet-500 hover:text-white transition group-hover:scale-110"
+                        aria-label="Play Catchphrase 5">
+                        <i data-lucide="play" class="w-5 h-5 ml-1"></i>
+                    </button>
+                    <span class="font-medium text-white text-sm">恭喜你，有一個天大的好消息...</span>
+                </div>
+            </div>
+
+            <!-- Phrase 6 -->
+            <div
+                class="flex items-center justify-between p-4 rounded-xl bg-slate-800/40 border border-slate-700/60 hover:border-blue-500/50 transition group">
+                <div class="flex items-center space-x-3 w-full">
+                    <button onclick="playAudio('audio/6.m4a')"
+                        class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500/10 text-blue-400 flex items-center justify-center hover:bg-blue-500 hover:text-white transition group-hover:scale-110"
+                        aria-label="Play Catchphrase 6">
+                        <i data-lucide="play" class="w-5 h-5 ml-1"></i>
+                    </button>
+                    <span class="font-medium text-white text-sm">做電商不是玩命！</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
         <p>© 2026 David Sun. Built with Tailwind CSS & Alpine.js.</p>
@@ -550,6 +912,17 @@
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
+
+        // Audio Player
+        let currentAudio = null;
+        function playAudio(src) {
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+            currentAudio = new Audio(src);
+            currentAudio.play().catch(e => console.error("Error playing audio:", e));
+        }
     </script>
 </body>
 
